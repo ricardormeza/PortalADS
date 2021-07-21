@@ -1,0 +1,382 @@
+@import url(normalize.css);
+@import url(global.css);
+@import url(variables.css);
+@import url(/src/css/fonts.css);
+
+body{
+    cursor: url(/src/img/cursor.png),auto;
+}
+.bg--loguin{
+    background-image: url(/src/img/bg_stars2000x800.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    max-height: 100vh;
+    padding: 0rem;
+}
+.header{
+    display: flex;
+    height: 2rem;
+    justify-content: space-between;
+    margin-top: 5rem;
+    /* border: 1px solid red; */
+}
+.header-logo{
+    height: 10rem;
+    width: 10rem;
+}
+@media (min-width: 16.25rem) and (max-width: 48rem) {
+    .header-logo {
+        height: 5rem;
+        width: 5rem;
+    }
+  }
+.header-logo2{
+    height: 5rem;
+    width: 9rem;
+}
+@media (min-width: 16.25rem) and (max-width: 48rem) {
+    .header-logo2 {
+        height: 3rem;
+        width: 6rem;
+    }
+  }
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 9rem;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.main-head{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
+    text-align: center;
+    /* border: 1px solid green; */
+}
+.main-head h1, h2,p{
+    color: white;
+    margin: 1.8rem;
+}
+.main-head h1{
+    font-size: 4.5rem!important;
+}
+.main-head h2{
+    font-size: 2.5rem!important;
+}
+.main-head span{
+    color: green;
+}
+.main-head p{
+    color: white;
+    font-size: 2.6rem;
+}
+.main-head-green{
+    font-weight: bold;
+}
+.main-btn{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+@media (min-width: 16.25rem) and (max-width: 48rem) {
+    .main-btn {
+        align-items: center;
+        flex-direction: column;
+    }
+  }
+.btn-loguin{
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    color: white;
+    font-size: 1.6rem;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    transition: ease-out 0.3s;
+    width: 14.875rem;
+    height: 3.65rem;
+}
+@media (min-width: 16.25rem) and (max-width: 48rem) {
+    .btn-loguin {
+      width: 18.87rem;
+    }
+  }
+.btn-loguin:hover{
+    box-shadow: inset 14.875rem 0 0 0 #f9e506;
+    cursor: pointer;
+    
+}
+@media (min-width: 16.25rem) and (max-width: 48rem) {
+    .btn-loguin:hover {
+        box-shadow: inset 18.87rem 0 0 0 #f9e506;
+        width: 18.87rem;
+    }
+  }
+  .btn-loguin a{
+    color: white;
+    text-decoration: none;
+  }
+  .btn-loguin a:hover{
+    color: black;
+  }
+.footer{
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.footer strong{
+    color: white;
+    font-size: 1.3rem;
+}
+.footer strong a{
+    color: white;
+    text-decoration: none;
+}
+.footer p{
+    margin: 0;
+    color: white;
+}
+
+/* PORTAL */
+.container--grid{
+    background-color: var(--color-5);
+    display: grid;
+    grid-template-columns: 182.5px 182.5px auto auto auto;
+    grid-template-rows: 100px 250px 400px 100px 100px 100px;
+    grid-template-areas: 
+        "nav nav header header header"
+        "nav nav header header header"
+        "nav nav main main main"
+        "nav nav main main main"
+        "nav nav main main main"
+        "nav nav footer footer footer";
+        gap: 1.6rem;
+}
+.header--portal{
+    grid-area: header;
+    background-image: url(/src/img/BG_stars800x400.png);
+    /* background-color: #116f81; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+   
+}
+.header--portal_top{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.33;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 2rem 0px 0px 2rem;
+    width: 95%;
+    font-size: 1rem     ;
+}
+.header--portal_top h4{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.header--portal_top h4 span{
+    color: green;
+}
+.header--portal_top p{
+    font-size: 2rem!important;
+}
+.header--portal_top p{
+    font-size: 1.3rem;
+}
+.header--portal_top input{
+    font-size: 2rem;
+    color: gray;
+    width: 300px;
+}
+.icons--flex{
+    margin-top: 9.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.icon--image-1{
+    background-image: url(/src/img/icons/Imagenes1.svg);
+}
+.icon--image-1:hover{
+    background-image: url(/src/img/icons/Imagenes2.svg);
+}
+.icon--image-2{
+    background-image: url(/src/img/icons/Infográfico1.svg);
+}
+.icon--image-2:hover{
+    background-image: url(/src/img/icons/Infográfico2.svg);
+}
+.icon--image-3{
+    background-image: url(/src/img/icons/Spots1.svg);
+}
+.icon--image-3:hover{
+    background-image: url(/src/img/icons/Spots2.svg);
+}
+.icon--image-4{
+    background-image: url(/src/img/icons/Video1.svg);
+}
+.icon--image-4:hover{
+    background-image: url(/src/img/icons/Video2.svg);
+}
+.nav--main_portal{
+    grid-area: nav;
+    border-right: 2px solid green;
+    /* background-color: rgb(9, 27, 82); */
+}
+.nav--logo{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-top: 8rem;
+    margin-left: 8rem;
+}
+.nav--menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin-top: 3rem;
+    padding: 0;
+    line-height: 1.33;
+}
+.nav--menu ul li{
+    font-size: 2rem;
+    margin: 1rem;
+    list-style: none;
+}
+.nav--menu ul li a{
+    text-decoration: none;
+    color: var(--color-3);
+}
+.main--portal{
+    grid-area: main;
+    /* background-color: salmon; */
+}
+.footer--portal{
+    grid-area: footer;
+    /* background-color: sienna; */
+}
+/* -----  FORMULARIO ------- */
+.formulario--container{
+    border-radius: 2rem;
+}
+.formulario--container h3{
+    color: var(--color-3);
+    display: flex;
+    margin: 0;
+    padding: 1rem;
+}
+.formulario{
+    color: var(--color-3);
+    display:flex;
+    /* border: 1px solid green; */
+    gap: 2rem;
+    justify-content: space-around;
+    margin-top: -3rem;
+}
+/* .formulario--top{
+    border: 2px solid red;
+} */
+.formulario--top_img{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem 1rem 1rem;
+    /* margin-top: -85px; */
+}
+.formulario--top button{
+    border: none;
+    border-radius: 1rem;
+    background-color: #127183;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn--blanco{
+    color: var(--color-4);
+}
+.btn--azul{
+    color: cornflowerblue;
+}
+.formulario--top form{
+    height: 400px;
+    /* margin-top: -75px; */
+    margin-left: 15px;
+    background-color: var(--color-4);
+    width: 600px;
+}
+.formulario-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0px 3rem;
+}
+.formulario-form label{
+    color: blue;
+}
+.formulario-form input{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.formulario-form_checkboxes{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-left: 12rem;
+    
+}
+.btn--perfil{
+    padding: 1rem;
+    width: 12rem;
+}
+.formulario--image{
+    border: 1px solid yellow;
+    border-radius: 50%;
+    display: flex;
+    background-color: var(--color-4);
+    border-radius: 1rem;
+    flex-direction: column;
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 70%;
+}
+.formulario--image p{
+    color: var(--color-3);
+}
+.formulario--image-img{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+/* .formulario--image_span{
+    padding: 10px 32px;
+    background-color: green;
+    padding: -10px;
+} */
+.test{
+    background-image: url(/src/img/Pruebaventana2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* height: 550px; */
+    border: 1px solid red;
+    height: 100vh;
+    width: 100%;
+}

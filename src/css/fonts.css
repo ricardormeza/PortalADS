@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Clarika-regular;
+    src: url(/src/fonts/The\ Refinery\ \ Clarika\ Geo\ Regular.otf);
+}
+@font-face {
+    font-family: Clarika-bold;
+    src: url(/src/fonts/The\ Refinery\ \ Clarika\ Grot\ Bold.otf);
+}
+@font-face {
+    font-family: Clarika-extra;
+    src: url(/src/fonts/The\ Refinery\ \ Clarika\ Grot\ ExtraBold.otf);
+}
+h1{
+    font-family: 'Clarika-regular';
+}

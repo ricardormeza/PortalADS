@@ -1,0 +1,16 @@
+:root{
+    --color-green:green;
+    --color-2:#000000;
+    --color-3:#757575;
+    --color-4:#ffffff;
+    --color-5:#f2f2f2;
+    --color-main:#c8f5fa;
+    --color-azul:#15516b;
+    --color-azul2:#0a2835;
+    --color-gris1:#bebebe;
+    --color-gris2:#e8eaea;
+    --principal-font:'Roboto', sans-serif;
+    /* --clarika-regular: url(../fonts/The\ Refinery\ \ Clarika\ Geo\ Regular.otf);
+    --clarika-bold: url(../fonts/The\ Refinery\ \ Clarika\ Grot\ Bold.otf);
+    --clarika-regular: url(../fonts/The\ Refinery\ \ Clarika\ Grot\ ExtraBold.otf); */
+}
